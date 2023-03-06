@@ -4,26 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <Header>
-        <div>
-            <a href="#"></a>
-            <p>Aaron Mahabir</p>
+    <Header class="header">
+        <div class="header-logo">
+            <a class="header-logo__image" href="#">
+                <img src="./assets/icons/am-logo.png" alt="This is my Logo">
+            </a>
+            <p class="header-logo__name">Aaron Mahabir</p>
         </div>
-        <nav>
-            <ul>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Resume</li>
-                <li>Contact</li>
+        <nav class="header-nav">
+            <ul class="header-nav__list">
+                <li class="header-nav__list-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="header-nav__list-item">
+                    <a href="#">Projects</a>
+                </li>
+                <li class="header-nav__list-item">
+                    <a href="#">Resume</a>
+                </li>
+                <li class="header-nav__list-item">
+                    <a href="#">Contact</a>
+                </li>
             </ul>
         </nav>
+        <button>
+            Toggle
+        </button>
     </Header>
 
     <Main>
-        <h2></h2>
+        <div>
+
+            <h2>About</h2>
+            <h1>Aaron Mahabir</h1> 
+            <p>I am a full stack software engineer looking to build my career in the tech industry</p>
+
+            <h3>Skills</h3>
+            <ul>
+                <li>ReactJS</li>
+                <li>NodeJS</li>
+                <li>MySQL</li>
+                <li>HTML</li>
+                <li>SASS</li>
+                <li>Git</li>
+                <li>Express</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Projects</h2>
+            <h3>
+                <a href="https://ultimateteam.vercel.app/">Pokemon Ultimate Team</a>    
+            </h3>
+            <p>
+                Pokemon Ultimate Team is a full stack application that utilizes ReactJS to create the front end experience. 
+                I used NodeJS to create the server that allows the front end side of the site to communicate with the Database
+                I created using MySQL.
+            </p>
+        </div>
+
+        <div>
+            <h2>Resume</h2>
+            <div>
+                <a href="./assets/downloads/AaronMahabirResume.pdf" download>Click Here To Download My Resume</a>
+            </div>
+            <img src="./assets/downloads/AaronMahabirResume.pdf" alt="This is my Resume">
+        </div>
     </Main>
+
+    <Footer>
+        <div>
+            <h2>Contact Me</h2>
+            <img src="./assets/icons/icons8-github.svg" alt="GitHub">
+            <img src="./assets/icons/icons8-linkedin.svg" alt="LinkedIn">
+        </div>
+    </Footer>
 </body>
 </html>
