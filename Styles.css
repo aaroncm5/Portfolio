@@ -22,4 +22,32 @@ html {
 
 .header {
   height: 15vh;
+  display: flex;
+  background-color: blue;
+  justify-content: space-between;
+}
+.header-logo {
+  height: 100%;
+}
+.header-logo__image {
+  height: 100%;
+}
+.header-logo__image-link {
+  height: 100px;
+  padding: 0;
+  margin: 0;
+}
+.header-nav {
+  display: none;
+  flex-direction: row;
+}
+
+.mobile {
+  height: 100%;
+}
+.mobile-button {
+  height: 100%;
+}
+.mobile-button__image {
+  height: 100%;
 }/*# sourceMappingURL=Styles.css.map */
