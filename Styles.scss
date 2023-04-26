@@ -1,9 +1,15 @@
+@use './partials/fonts' as *;
+@use './partials/global' as *;
 
-html { box-sizing: border-box;}
+html { 
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 
 *, *:before, *:after {box-sizing: inherit}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
 
 .header {
     height: 15vh;
@@ -29,8 +35,11 @@ html { box-sizing: border-box;}
     &-nav {
         display: none;
         flex-direction: row;
-
     }
+}
+
+.show {
+    display: block;
 }
 
 .mobile {
@@ -41,6 +50,13 @@ html { box-sizing: border-box;}
 
         &__image {
             height: 100%;
+        }
+    }
+
+    &-nav {
+
+        &__list {
+            display: none;
         }
     }
 }
