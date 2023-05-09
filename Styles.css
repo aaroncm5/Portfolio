@@ -18,9 +18,11 @@
   src: url("../assets/fonts/Inter-SemiBold.ttf") format("TrueType");
   font-weight: 600;
 }
-html {
+html, body {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 *, *:before, *:after {
@@ -44,18 +46,22 @@ html {
 .header {
   height: 15vh;
   display: flex;
-  background-color: red;
+  background-color: none;
   justify-content: space-between;
 }
 .header-logo {
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 .header-logo__image {
+  display: flex;
+  flex-direction: row;
   height: 100%;
 }
 .header-logo__image-link {
-  height: 100px;
-  padding: 0;
+  height: 100%;
+  padding: 1rem 0;
   margin: 0;
 }
 .header-nav {
@@ -63,8 +69,9 @@ html {
   flex-direction: row;
 }
 
-.show {
-  display: block;
+.toggle {
+  height: 50%;
+  background-color: white;
 }
 
 .mobile {
@@ -72,10 +79,21 @@ html {
 }
 .mobile-button {
   height: 100%;
+  background-color: white;
+  border: none;
+  padding: 1rem;
 }
 .mobile-button__image {
   height: 100%;
 }
 .mobile-nav__list {
   display: none;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
 }/*# sourceMappingURL=Styles.css.map */
