@@ -23,6 +23,7 @@ html, body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #222426;
 }
 
 *, *:before, *:after {
@@ -46,7 +47,8 @@ html, body {
 .header {
   height: 15vh;
   display: flex;
-  background-color: none;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgba(0, 0, 222, 0.9262079832) 52%, rgb(0, 212, 255) 100%);
   justify-content: space-between;
 }
 .header-logo {
@@ -58,6 +60,7 @@ html, body {
   display: flex;
   flex-direction: row;
   height: 100%;
+  padding: 1rem;
 }
 .header-logo__image-link {
   height: 100%;
@@ -76,18 +79,24 @@ html, body {
 
 .mobile {
   height: 100%;
+  display: none;
 }
 .mobile-button {
   height: 100%;
-  background-color: white;
+  background-color: transparent;
   border: none;
   padding: 1rem;
 }
 .mobile-button__image {
   height: 100%;
+  padding: 1rem;
 }
 .mobile-nav__list {
-  display: none;
+  width: 100vw;
+  background-color: white;
+}
+.mobile-nav__list-item {
+  font-size: 2rem;
 }
 
 .show {
@@ -96,4 +105,7 @@ html, body {
   justify-content: center;
   width: 100%;
   list-style-type: none;
+  background-color: #222426;
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=Styles.css.map */

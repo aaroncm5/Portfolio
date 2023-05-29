@@ -1,3 +1,3 @@
 const showMenu = () => {
-    document.querySelector('.mobile-nav__list').classList.toggle("show");
+    document.querySelector('.mobile').classList.toggle("show");
 }
