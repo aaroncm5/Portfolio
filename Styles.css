@@ -45,11 +45,12 @@ html, body {
 }
 
 .header {
-  height: 15vh;
+  height: 10vh;
   display: flex;
   background: rgb(2, 0, 36);
   background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgba(0, 0, 222, 0.9262079832) 52%, rgb(0, 212, 255) 100%);
   justify-content: space-between;
+  position: relative;
 }
 .header-logo {
   height: 100%;
@@ -60,7 +61,7 @@ html, body {
   display: flex;
   flex-direction: row;
   height: 100%;
-  padding: 1rem;
+  padding: 0;
 }
 .header-logo__image-link {
   height: 100%;
@@ -77,26 +78,31 @@ html, body {
   background-color: white;
 }
 
-.mobile {
-  height: 100%;
-  display: none;
-}
 .mobile-button {
   height: 100%;
   background-color: transparent;
   border: none;
-  padding: 1rem;
+  padding: 0;
 }
 .mobile-button__image {
   height: 100%;
   padding: 1rem;
 }
 .mobile-nav__list {
-  width: 100vw;
-  background-color: white;
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  background-color: #222426;
+  list-style-type: none;
 }
 .mobile-nav__list-item {
-  font-size: 2rem;
+  font-size: 1rem;
+}
+.mobile-nav__list-item-link {
+  text-decoration: none;
+  color: white;
 }
 
 .show {
@@ -104,8 +110,5 @@ html, body {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  list-style-type: none;
-  background-color: #222426;
-  color: white;
   text-decoration: none;
 }/*# sourceMappingURL=Styles.css.map */
