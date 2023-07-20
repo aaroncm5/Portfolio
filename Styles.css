@@ -72,6 +72,11 @@ html, body {
   display: none;
   flex-direction: row;
 }
+@media (min-width: 768px) {
+  .header-nav {
+    display: block;
+  }
+}
 
 .toggle {
   height: 50%;
@@ -83,6 +88,11 @@ html, body {
   background-color: transparent;
   border: none;
   padding: 0;
+}
+@media (min-width: 768px) {
+  .mobile-button {
+    display: none;
+  }
 }
 .mobile-button__image {
   height: 100%;
@@ -118,6 +128,11 @@ html, body {
   animation: growDown 300ms ease-in-out forwards;
   transform-origin: top center;
 }
+@media (min-width: 768px) {
+  .show {
+    display: none;
+  }
+}
 
 @keyframes growDown {
   0% {
@@ -129,4 +144,34 @@ html, body {
   100% {
     transform: scaleY(1);
   }
+}
+.container {
+  padding: 0 1rem;
+}
+
+.about {
+  width: 100%;
+}
+.about-title {
+  width: 100%;
+}
+.about-title__title {
+  margin: 0;
+  color: white;
+}
+.about-title__name {
+  margin: 0;
+  color: white;
+}
+.about-image {
+  height: 300px;
+}
+.about-image__picture {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 2px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=Styles.css.map */
