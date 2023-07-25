@@ -52,6 +52,11 @@ html, body {
   justify-content: space-between;
   position: relative;
 }
+@media (min-width: 768px) {
+  .header {
+    padding: 0 1rem;
+  }
+}
 .header-logo {
   height: 100%;
   display: flex;
@@ -74,8 +79,22 @@ html, body {
 }
 @media (min-width: 768px) {
   .header-nav {
-    display: block;
+    display: flex;
+    align-items: center;
   }
+}
+@media (min-width: 768px) {
+  .header-nav__list {
+    display: flex;
+  }
+}
+.header-nav__list-item {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+.header-nav__list-item-link {
+  color: white;
+  text-decoration: none;
 }
 
 .toggle {
