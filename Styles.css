@@ -48,13 +48,13 @@ html, body {
   height: 10vh;
   display: flex;
   background: rgb(2, 0, 36);
-  background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgba(0, 0, 222, 0.9262079832) 52%, rgb(0, 212, 255) 100%);
+  background: #000;
   justify-content: space-between;
   position: relative;
 }
 @media (min-width: 768px) {
   .header {
-    padding: 0 1rem;
+    padding: [1rem, 0, 0, 0];
   }
 }
 .header-logo {
@@ -94,7 +94,7 @@ html, body {
 }
 .header-nav__list-item-link {
   color: white;
-  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
+  background-image: linear-gradient(to right, #ffa200, #ffa200 50%, #ffffff 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -106,7 +106,7 @@ html, body {
 }
 .header-nav__list-item-link:before {
   content: "";
-  background: #54b3d6;
+  background: #ffa200;
   display: block;
   position: absolute;
   bottom: -3px;

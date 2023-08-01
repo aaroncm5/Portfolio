@@ -18,12 +18,14 @@ html, body {
     height: 10vh;
     display: flex;
     background: rgb(2,0,36);
-    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(0,0,222,0.9262079831932774) 52%, rgba(0,212,255,1) 100%);    
+    // background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(0,0,222,0.9262079831932774) 52%, rgba(0,212,255,1) 100%);
+    background:#000;
     justify-content: space-between;
     position: relative;
 
     @include tablet {
-        padding: 0 1rem;
+        padding: [1rem, 0, 0 ,0] ;
+
     }
 
     &-logo {
@@ -71,9 +73,9 @@ html, body {
 
                     background-image: linear-gradient(
                         to right,
-                        #54b3d6,
-                        #54b3d6 50%,
-                        #000 50%
+                        #ffa200,
+                        #ffa200 50%,
+                        #ffffff 50%
                     );
                     background-size: 200% 100%;
                     background-position: -100%;
@@ -86,7 +88,7 @@ html, body {
 
                     &:before{
                         content: '';
-                        background: #54b3d6;
+                        background: #ffa200;
                         display: block;
                         position: absolute;
                         bottom: -3px;
