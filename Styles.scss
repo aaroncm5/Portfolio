@@ -18,14 +18,16 @@ html, body {
     height: 10vh;
     display: flex;
     background: rgb(2,0,36);
-    // background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(0,0,222,0.9262079831932774) 52%, rgba(0,212,255,1) 100%);
     background:#000;
     justify-content: space-between;
     position: relative;
 
     @include tablet {
-        padding: [1rem, 0, 0 ,0] ;
+        padding: 0 2rem 0 1rem ;
+    }
 
+    @include desktop {
+        padding: 0 6rem 0 5rem;
     }
 
     &-logo {
@@ -69,7 +71,6 @@ html, body {
 
                 &-link {
                     color: white;
-                    // text-decoration: none;
 
                     background-image: linear-gradient(
                         to right,
@@ -191,7 +192,7 @@ html, body {
 }
 
 .container {
-    padding: 0 1rem;
+    padding: 0 0;
 }
 
 .about {

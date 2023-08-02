@@ -54,7 +54,12 @@ html, body {
 }
 @media (min-width: 768px) {
   .header {
-    padding: [1rem, 0, 0, 0];
+    padding: 0 2rem 0 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
+    padding: 0 6rem 0 5rem;
   }
 }
 .header-logo {
@@ -190,7 +195,7 @@ html, body {
   }
 }
 .container {
-  padding: 0 1rem;
+  padding: 0 0;
 }
 
 .about {
