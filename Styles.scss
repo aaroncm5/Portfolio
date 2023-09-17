@@ -197,6 +197,9 @@ html, body {
 
 .about {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
     &-title {
@@ -213,8 +216,13 @@ html, body {
         }
     }
 
+    &-description__text {
+        color: white;
+    }
+
     &-image {
         height: 300px;
+        width: 300px;
 
         &__picture {
             height: 100%;

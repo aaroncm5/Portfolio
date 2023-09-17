@@ -200,6 +200,9 @@ html, body {
 
 .about {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about-title {
   width: 100%;
@@ -214,6 +217,7 @@ html, body {
 }
 .about-image {
   height: 300px;
+  width: 300px;
 }
 .about-image__picture {
   height: 100%;
