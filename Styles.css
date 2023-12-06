@@ -215,6 +215,9 @@ html, body {
   margin: 0;
   color: white;
 }
+.about-description__text {
+  color: white;
+}
 .about-image {
   height: 300px;
   width: 300px;
