@@ -24,6 +24,8 @@ html, body {
 
     @include tablet {
         padding: 0 2rem 0 1rem ;
+        margin: 0;
+ 
     }
 
     @include desktop {
@@ -192,15 +194,19 @@ html, body {
 }
 
 .container {
-    padding: 0 0;
+    padding: 0 0.5rem;
 }
 
 .about {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
     &-title {
         width: 100%;
+        padding: 1rem 0;
 
         &__title {
             margin: 0;
@@ -213,8 +219,14 @@ html, body {
         }
     }
 
+    &-description__text {
+        color: white;
+    }
+
     &-image {
-        height: 300px;
+        height: 15rem;
+        width: 15rem;
+        margin: 2rem 0;
 
         &__picture {
             height: 100%;

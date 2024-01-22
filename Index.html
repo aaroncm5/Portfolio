@@ -13,10 +13,6 @@
             <a class="header-logo__image" href="#">
                 <img class="header-logo__image-link" src="./assets/icons/am-logo.png" alt="This is my Logo">
             </a>
-            <!-- <p class="header-logo__name">Aaron Mahabir</p> -->
-            <!-- <button class="toggle">
-                Toggle
-            </button> -->
         </div>
         
 
@@ -63,7 +59,6 @@
     <Main class="container">
         <div class="about" id="About">
             <div class="about-title">
-                <h2 class="about-title__title">About</h2>
                 <h1 class="about-title__name">Aaron Mahabir</h1> 
             </div>
             <div class="about-image">
@@ -71,22 +66,24 @@
             </div>
             <div class="about-description">
                 <p class="about-description__text">I am a full stack software engineer looking to build my career in the tech industry</p>
+            </div>   
+            <h2>Resume</h2>
+            <div>
+                <a href="./assets/downloads/AaronMahabirResume.pdf" download>Click Here To Download My Resume</a>
             </div>
-                
-            
-        <div class="about-skills">
-            <h3 class="about-skills__title">Skills</h3>
-            <ul class="about-skills__list">
-                <li class="about-skills__list-item">ReactJS</li>
-                <li class="about-skills__list-item">NodeJS</li>
-                <li class="about-skills__list-item">MySQL</li>
-                <li class="about-skills__list-item">HTML</li>
-                <li class="about-skills__list-item">SASS</li>
-                <li class="about-skills__list-item">Git</li>
-                <li class="about-skills__list-item">Express</li>
-            </ul>
         </div>
-            
+
+        <div class="skills">
+            <h3 class="skills__title">Skills</h3>
+            <ul class="skills__list">
+                <li class="skills__list-item">ReactJS</li>
+                <li class="skills__list-item">NodeJS</li>
+                <li class="skills__list-item">HTML</li>
+                <li class="skills__list-item">SASS</li>
+                <li class="skills__list-item">MySQL</li>
+                <li class="skills__list-item">Git</li>
+                <li class="skills__list-item">Express</li>
+            </ul>
         </div>
 
         <div>
@@ -110,13 +107,28 @@
         </div>
     </Main>
 
-    <Footer>
+    <!-- <Footer>
         <div>
             <h2>Contact Me</h2>
             <img src="./assets/icons/icons8-github.svg" alt="GitHub">
             <img src="./assets/icons/icons8-linkedin.svg" alt="LinkedIn">
         </div>
-    </Footer>
+    </Footer> -->
+
+    <section id="hero" class="jumbotron">
+        <div class="container">
+          <h1 class="hero-title load-hidden">
+            Hi, my name is <span class="text-color-main">Your Name</span>
+            <br />
+            I'm the Unknown Developer.
+          </h1>
+          <p class="hero-cta load-hidden">
+            <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+              >Know more</a
+            >
+          </p>
+        </div>
+      </section>
     <script src="./index.js"></script>
 </body>
 </html>
