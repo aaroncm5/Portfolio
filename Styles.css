@@ -196,7 +196,7 @@ html, body {
   }
 }
 .container {
-  padding: 0 0;
+  padding: 0 0.5rem;
 }
 @media (min-width: 768px) {
   .container {
@@ -287,9 +287,13 @@ html, body {
 
 .about {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about-title {
   width: 100%;
+  padding: 1rem 0;
 }
 .about-title__title {
   margin: 0;
@@ -299,8 +303,13 @@ html, body {
   margin: 0;
   color: white;
 }
+.about-description__text {
+  color: white;
+}
 .about-image {
-  height: 300px;
+  height: 15rem;
+  width: 15rem;
+  margin: 2rem 0;
 }
 .about-image__picture {
   height: 100%;
