@@ -14,7 +14,6 @@
                 <img class="header-logo__image-link" src="./assets/icons/am-logo.png" alt="This is my Logo">
             </a>
         </div>
-        
 
         <div class="mobile">
             <button onclick="showMenu()" class="mobile-button">
@@ -36,99 +35,107 @@
                 </li>
             </ul>
         </div>
-        
-        <nav class="header-nav">
-            <ul class="header-nav__list">
-                <li class="header-nav__list-item">
-                    <a class="header-nav__list-item-link" href="#">About</a>
-                </li>
-                <li class="header-nav__list-item">
-                    <a class="header-nav__list-item-link" href="#">Projects</a>
-                </li>
-                <li class="header-nav__list-item">
-                    <a class="header-nav__list-item-link" href="#">Resume</a>
-                </li>
-                <li class="header-nav__list-item">
-                    <a class="header-nav__list-item-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        
     </Header>
 
     <Main class="container">
-        <div class="about" id="About">
-            <div class="about-title">
-                <h1 class="about-title__name">Aaron Mahabir</h1> 
-            </div>
-            <div class="about-image">
-                <img class="about-image__picture" src="./assets/profile/profile.jpg" alt="This is a picture of me">
-            </div>
-            <div class="about-description">
-                <p class="about-description__text">I am a full stack software engineer looking to build my career in the tech industry</p>
-            </div>   
-            <h2>Resume</h2>
-            <div>
-                <a href="./assets/downloads/AaronMahabirResume.pdf" download>Click Here To Download My Resume</a>
-            </div>
-        </div>
 
-        <div class="skills">
-            <h3 class="skills__title">Skills</h3>
-            <ul class="skills__list">
-                <li class="skills__list-item">ReactJS</li>
-                <li class="skills__list-item">NodeJS</li>
-                <li class="skills__list-item">HTML</li>
-                <li class="skills__list-item">SASS</li>
-                <li class="skills__list-item">MySQL</li>
-                <li class="skills__list-item">Git</li>
-                <li class="skills__list-item">Express</li>
+        <nav class="nav">
+
+            <div class="nav-logo">
+                <a class="nav-logo__image" href="#">
+                    <img class="nav-logo__image-link" src="./assets/profile/profile2.png" alt="This is my Logo">
+                </a>
+            </div>
+
+            <div class="nav-contact">
+                <a class="nav-contact__link" href="https://github.com/aaroncm5">
+                    <img class="nav-contact__link-icon" src="./assets/icons/icons8-github.svg" alt="GitHub">
+                </a>
+                <a class="nav-contact__link" href="https://www.linkedin.com/in/aaronmahabir/">
+                    <img class="nav-contact__link-icon" src="./assets/icons/icons8-linkedin.svg" alt="LinkedIn">
+                </a>
+                <a class="nav-contact__link" href="/">
+                    <img class="nav-contact__link-icon" src="./assets/icons/email_icon.svg" alt="Email">
+                </a>    
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-list__item active">
+                    <a class="nav-list__item-link" href="#About">About</a>
+                </li>
+                <li class="nav-list__item">
+                    <a class="nav-list__item-link" href="#">Projects</a>
+                </li>
+                <li class="nav-list__item">
+                    <a class="nav-list__item-link" href="#">Resume</a>
+                </li>
+                <li class="nav-list__item">
+                    <a class="nav-list__item-link" href="#">Contact</a>
+                </li>
             </ul>
-        </div>
+        </nav>
 
-        <div>
-            <h2>Projects</h2>
-            <h3>
-                <a href="https://ultimateteam.vercel.app/">Pokemon Ultimate Team</a>    
-            </h3>
-            <p>
-                Pokemon Ultimate Team is a full stack application that utilizes ReactJS to create the front end experience. 
-                I used NodeJS to create the server that allows the front end side of the site to communicate with the Database
-                I created using MySQL.
-            </p>
-        </div>
 
-        <div>
-            <h2>Resume</h2>
-            <div>
-                <a href="./assets/downloads/AaronMahabirResume.pdf" download>Click Here To Download My Resume</a>
+        <div class="container-body">
+            <div class="about" id="About">
+                <div class="about-title">
+                    <h2 class="about-title__title">About</h2>
+                    <h1 class="about-title__name">Aaron Mahabir</h1> 
+                </div>
+                <div class="about-image">
+                    <img class="about-image__picture" src="./assets/profile/profile.jpg" alt="This is a picture of me">
+                </div>
+                <div class="about-description">
+                    <p class="about-description__text">I am a full stack software engineer looking to build my career in the tech industry</p>
+                </div>
+                    
+                <div class="about-skills">
+                    <h3 class="about-skills__title">Skills</h3>
+                    <ul class="about-skills__list">
+                        <li class="about-skills__list-item">ReactJS</li>
+                        <li class="about-skills__list-item">NodeJS</li>
+                        <li class="about-skills__list-item">MySQL</li>
+                        <li class="about-skills__list-item">HTML</li>
+                        <li class="about-skills__list-item">SASS</li>
+                        <li class="about-skills__list-item">Git</li>
+                        <li class="about-skills__list-item">Express</li>
+                    </ul>
+                </div>
             </div>
-            <img src="./assets/downloads/AaronMahabirResume.pdf" alt="This is my Resume">
+    
+            <div>
+                <h2>Projects</h2>
+                <h3>
+                    <a href="https://ultimateteam.vercel.app/">Pokemon Ultimate Team</a>    
+                </h3>
+                <p>
+                    Pokemon Ultimate Team is a full stack application that utilizes ReactJS to create the front end experience. 
+                    I used NodeJS to create the server that allows the front end side of the site to communicate with the Database
+                    I created using MySQL.
+                </p>
+            </div>
+
+            <div>
+                <h2>Resume</h2>
+                <div>
+                    <a href="./assets/downloads/AaronMahabirResume.pdf" download>Click Here To Download My Resume</a>
+                </div>
+                <img src="./assets/downloads/AaronMahabirResume.pdf" alt="This is my Resume">
+            </div>
         </div>
+
+        
     </Main>
 
-    <!-- <Footer>
-        <div>
+
+    <Footer>
+        <!-- <div>
             <h2>Contact Me</h2>
             <img src="./assets/icons/icons8-github.svg" alt="GitHub">
             <img src="./assets/icons/icons8-linkedin.svg" alt="LinkedIn">
-        </div>
-    </Footer> -->
+        </div> -->
+    </Footer>
 
-    <section id="hero" class="jumbotron">
-        <div class="container">
-          <h1 class="hero-title load-hidden">
-            Hi, my name is <span class="text-color-main">Your Name</span>
-            <br />
-            I'm the Unknown Developer.
-          </h1>
-          <p class="hero-cta load-hidden">
-            <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-              >Know more</a
-            >
-          </p>
-        </div>
-      </section>
     <script src="./index.js"></script>
 </body>
 </html>
