@@ -207,13 +207,16 @@ html, body {
     @include tablet {
         display: flex;
         flex-direction: column;
-        width: 20%;
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
     }
 
     &-logo {
         @include tablet {
-            height: 100px;
-            width: 100px;
+            height: 150px;
+            width: 150px;
         }
 
         &__image {
@@ -225,6 +228,13 @@ html, body {
             &-link {
                 @include tablet {
                     width: 100%;
+                    height: 100%;
+                    object-fit: none;
+                    object-position: 50% 33%;
+                    border-radius: 25%;
+                    border: 2px white;
+                    
+
                 }
             }
         }
