@@ -195,20 +195,23 @@ html, body {
   }
 }
 .container {
-  padding: 0 0;
+  padding: 0 2rem;
 }
 @media (min-width: 768px) {
   .container {
     display: flex;
   }
 }
-.container-body {
-  padding: 0 2rem;
-}
 @media (min-width: 768px) {
   .container-body {
     margin-left: 20%;
     padding: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .container-body {
+    margin-left: 20%;
+    padding: 4rem, 2em;
   }
 }
 
@@ -328,4 +331,37 @@ html, body {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.about-skills__title {
+  color: orange;
+}
+.about-skills-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.about-skills-list__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.2px);
+  -webkit-backdrop-filter: blur(3.2px);
+  border: 1px solid rgba(255, 255, 255, 0.49);
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+.about-skills-list__icon {
+  height: 50px;
+}
+.about-skills-list__text {
+  padding-left: 2rem;
 }/*# sourceMappingURL=Styles.css.map */
