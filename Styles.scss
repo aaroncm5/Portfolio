@@ -6,7 +6,7 @@ html, body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    // background-color: #222426;
+    // background-color: gray;
 }
 
 *, *:before, *:after {box-sizing: inherit}
@@ -17,10 +17,14 @@ html, body {
 .header {
     height: 10vh;
     display: flex;
-    background: rgb(2,0,36);
-    background:#000;
+    background: lightgray;
+    // background:#000;
     justify-content: space-between;
     position: relative;
+    // position: fixed;
+        // top: 0;
+        // left: 0;
+        // overflow-x: hidden;
 
     @include tablet {
         padding: 0 2rem 0 1rem ;
@@ -142,9 +146,9 @@ html, body {
         display: none;
         width: 100%;
         position: absolute;
-        top: 5rem;
+        top: 10vh;
         left: 0;
-        background-color: #222426;
+        background-color: lightgray;
         list-style-type: none;
 
 
@@ -201,10 +205,16 @@ html, body {
     }
 
     &-body {
+
+        padding:0 2rem;
+
         @include tablet {
             margin-left: 20%;
+            padding: 2rem;
         }
     }
+
+
 }
 
 .nav {
@@ -220,7 +230,6 @@ html, body {
         padding: 1rem;
         background-color: lightgray;
         position: fixed;
-        // z-index: 1;
         top: 0;
         left: 0;
         overflow-x: hidden;
@@ -310,17 +319,21 @@ width: 100%;
 
         &__title {
             margin: 0;
-            color: white;
+            color: black;
+            font-weight: 400;
         }
 
         &__name {
             margin: 0;
-            color: white;
+            color: black;
+            text-decoration: underline blue;
+            width: auto;
+            font-weight: 700;
         }
     }
 
     &-description__text {
-        color: white;
+        color: black;
     }
 
     &-image {

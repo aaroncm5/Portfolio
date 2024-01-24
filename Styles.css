@@ -46,8 +46,7 @@ html, body {
 .header {
   height: 10vh;
   display: flex;
-  background: rgb(2, 0, 36);
-  background: #000;
+  background: lightgray;
   justify-content: space-between;
   position: relative;
 }
@@ -152,9 +151,9 @@ html, body {
   display: none;
   width: 100%;
   position: absolute;
-  top: 5rem;
+  top: 10vh;
   left: 0;
-  background-color: #222426;
+  background-color: lightgray;
   list-style-type: none;
 }
 .mobile-nav__list-item {
@@ -196,16 +195,20 @@ html, body {
   }
 }
 .container {
-  padding: 0 0.5rem;
+  padding: 0 0;
 }
 @media (min-width: 768px) {
   .container {
     display: flex;
   }
 }
+.container-body {
+  padding: 0 2rem;
+}
 @media (min-width: 768px) {
   .container-body {
     margin-left: 20%;
+    padding: 2rem;
   }
 }
 
@@ -297,14 +300,19 @@ html, body {
 }
 .about-title__title {
   margin: 0;
-  color: white;
+  color: black;
+  font-weight: 400;
 }
 .about-title__name {
   margin: 0;
-  color: white;
+  color: black;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+  width: auto;
+  font-weight: 700;
 }
 .about-description__text {
-  color: white;
+  color: black;
 }
 .about-image {
   height: 15rem;
