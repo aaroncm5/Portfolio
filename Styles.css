@@ -420,6 +420,11 @@ html, body {
   padding: 0 1rem;
   width: 100%;
 }
+@media (min-width: 1280px) {
+  .projects {
+    padding: 0 3rem;
+  }
+}
 .projects__title {
   color: orange;
 }
