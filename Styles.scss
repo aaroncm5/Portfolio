@@ -206,12 +206,10 @@ html, body {
     }
 
     &-body {
-
-        // padding:0 2rem;
-
         @include tablet {
             margin-left: 20%;
             padding: 2rem;
+            width: 80%;
         }
 
         @include desktop {
@@ -236,6 +234,7 @@ html, body {
         padding: 1rem;
         background-color: lightgray;
         position: fixed;
+        // z-index: +1;
         top: 0;
         left: 0;
         overflow-x: hidden;
@@ -255,7 +254,6 @@ html, body {
                 width: 100%;
                 height: 100%;
                 object-fit: scale-down; 
-                // object-position: 50% 20%;
                 border-radius: 50%;
                 border: 2px solid white ;
                 
@@ -372,6 +370,16 @@ width: 100%;
             flex-direction: column;
             justify-content: flex-start;
 
+
+            @include tablet {
+                height: 15rem;
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+                overflow-x: auto;
+            }
+
             &__card {
                 display: flex;
                 flex-direction: row;
@@ -385,10 +393,22 @@ width: 100%;
                 border: 1px solid rgba(255, 255, 255, 0.49);
                 padding: 0.5rem 1rem;
                 margin-bottom: 0.5rem;
+
+                @include tablet {
+                    flex-direction: column;
+                    height: 100%;
+                    width:10rem;
+                }
             }
 
             &__icon {
                 height: 50px;
+
+                @include tablet {
+                    // height: 8rem;
+                    width: 100%;
+                }
+
             }
 
             &__text {
