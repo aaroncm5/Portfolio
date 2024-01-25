@@ -483,3 +483,38 @@ width: 100%;
         }
     }
 }
+
+.resume {
+    padding: 0 1rem;
+
+    @include desktop {
+        padding: 0 3rem;
+    }
+
+    &__title{
+        color: orange;
+    }
+
+    &-display{ 
+        height: 10rem;
+    }
+
+    &-image{
+
+        &__picture {
+            display: none;
+        }
+    }
+}
+
+.display{
+    width: 50%;
+    display: block;
+}
+
+.footer {
+
+    @include tablet {
+        margin-left: 20%;
+    }
+}

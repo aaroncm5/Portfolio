@@ -60,3 +60,6 @@ const typeAnimation = () => {
 // start animation
 typeAnimation()
 
+const showResume = () => {
+  document.querySelector('.resume-image__picture').classList.toggle("display");
+}

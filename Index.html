@@ -177,12 +177,17 @@
                 
             </div>
 
-            <div>
-                <h2>Resume</h2>
-                <div>
-                    <a href="./assets/downloads/AaronMahabirResume.pdf" download>Click Here To Download My Resume</a>
+            <div class="resume" id="Resume">
+                <h2 class="resume__title">Resume</h2>
+                <div class="resume-download">
+                    <a class="resume-download__link" href="./assets/downloads/AaronMahabirResume.pdf" download>Download My Resume</a>
                 </div>
-                <embed src="./assets/downloads/AaronMahabirResume.pdf">
+                <div class="resume-image">
+                    <button onclick="showResume()" class="resume-image__button">View Resume</button>
+                    <div class="resume-image-container">
+                        <img class="resume-image__picture" src="./assets/downloads/resumeImage.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -190,9 +195,9 @@
     </Main>
 
 
-    <Footer>
-        <div>
-            <h2>Contact Me</h2>
+    <Footer class="footer" id="Contact">
+        <div class="footer-container">
+            <h2 class="footer-container__title">Contact Me</h2>
             <img src="./assets/icons/icons8-github.svg" alt="GitHub">
             <img src="./assets/icons/icons8-linkedin.svg" alt="LinkedIn">
         </div>

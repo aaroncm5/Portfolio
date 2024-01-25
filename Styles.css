@@ -452,4 +452,33 @@ html, body {
 }
 .projects-screenshot-container__image {
   width: 100%;
+}
+
+.resume {
+  padding: 0 1rem;
+}
+@media (min-width: 1280px) {
+  .resume {
+    padding: 0 3rem;
+  }
+}
+.resume__title {
+  color: orange;
+}
+.resume-display {
+  height: 10rem;
+}
+.resume-image__picture {
+  display: none;
+}
+
+.display {
+  width: 50%;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin-left: 20%;
+  }
 }/*# sourceMappingURL=Styles.css.map */
