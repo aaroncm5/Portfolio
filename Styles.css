@@ -283,7 +283,7 @@ html, body {
 }
 
 .active {
-  background: rgba(56, 217, 16, 0.37);
+  background: rgba(210, 144, 21, 0.37);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(78, 233, 30, 0.1);
   backdrop-filter: blur(3.2px);
@@ -315,8 +315,8 @@ html, body {
 .about-title__name {
   margin: 0;
   color: black;
-  -webkit-text-decoration: underline blue;
-          text-decoration: underline blue;
+  -webkit-text-decoration: underline orange;
+          text-decoration: underline orange;
   width: auto;
   font-weight: 700;
   height: 1.5rem;
@@ -414,4 +414,37 @@ html, body {
   .icon-container {
     width: 7rem;
   }
+}
+
+.projects {
+  padding: 0 1rem;
+  width: 100%;
+}
+.projects__title {
+  color: orange;
+}
+.projects-container {
+  width: 100%;
+}
+.projects-name {
+  width: 100%;
+}
+.projects-name__title {
+  text-decoration: none;
+  color: black;
+}
+.projects-screenshot {
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  .projects-screenshot {
+    display: flex;
+    gap: 1rem;
+  }
+}
+.projects-screenshot-container {
+  width: 100%;
+}
+.projects-screenshot-container__image {
+  width: 100%;
 }/*# sourceMappingURL=Styles.css.map */
