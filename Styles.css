@@ -98,7 +98,7 @@ html, body {
   list-style-type: none;
 }
 .header-nav__list-item-link {
-  color: white;
+  color: black;
   background-image: linear-gradient(to right, #ffa200, #ffa200 50%, #ffffff 50%);
   background-size: 200% 100%;
   background-position: -100%;
@@ -162,7 +162,7 @@ html, body {
 }
 .mobile-nav__list-item-link {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .show {
@@ -298,6 +298,11 @@ html, body {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1280px) {
+  .about {
+    padding: 0 3rem;
+  }
+}
 .about-title {
   width: 100%;
   padding: 1rem 0;
@@ -318,6 +323,11 @@ html, body {
 }
 .about-description__text {
   color: black;
+}
+@media (min-width: 1280px) {
+  .about-description__text {
+    margin: 0 3rem;
+  }
 }
 .about-image {
   height: 15rem;
@@ -353,7 +363,9 @@ html, body {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
-    overflow-x: auto;
+    gap: 2rem;
+    overflow-x: scroll;
+    padding: 1rem;
   }
 }
 .about-skills-list__card {
@@ -373,8 +385,10 @@ html, body {
 @media (min-width: 768px) {
   .about-skills-list__card {
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 100%;
-    width: 10rem;
+    width: 20rem;
   }
 }
 .about-skills-list__icon {
@@ -382,9 +396,22 @@ html, body {
 }
 @media (min-width: 768px) {
   .about-skills-list__icon {
+    height: auto;
     width: 100%;
   }
 }
 .about-skills-list__text {
   padding-left: 2rem;
+}
+@media (min-width: 768px) {
+  .about-skills-list__text {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .icon-container {
+    width: 7rem;
+  }
 }/*# sourceMappingURL=Styles.css.map */

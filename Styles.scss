@@ -76,7 +76,7 @@ html, body {
                 list-style-type: none;
 
                 &-link {
-                    color: white;
+                    color: black;
 
                     background-image: linear-gradient(
                         to right,
@@ -158,8 +158,7 @@ html, body {
 
             &-link {
                 text-decoration: none;
-                color: white;
-
+                color: black;
             }
 
         }
@@ -317,6 +316,10 @@ width: 100%;
     flex-direction: column;
     align-items: center;
 
+    @include desktop {
+        padding: 0 3rem;
+    }
+
     &-title {
         width: 100%;
         padding: 1rem 0;
@@ -339,6 +342,10 @@ width: 100%;
 
     &-description__text {
         color: black;
+
+        @include desktop {
+            margin: 0 3rem;
+        }
     }
 
     &-image {
@@ -377,7 +384,9 @@ width: 100%;
                 flex-direction: row;
                 flex-wrap: nowrap;
                 align-items: flex-start;
-                overflow-x: auto;
+                gap: 2rem;
+                overflow-x: scroll;
+                padding: 1rem;
             }
 
             &__card {
@@ -396,8 +405,10 @@ width: 100%;
 
                 @include tablet {
                     flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
                     height: 100%;
-                    width:10rem;
+                    width: 20rem;
                 }
             }
 
@@ -406,6 +417,7 @@ width: 100%;
 
                 @include tablet {
                     // height: 8rem;
+                    height: auto;
                     width: 100%;
                 }
 
@@ -413,7 +425,18 @@ width: 100%;
 
             &__text {
                 padding-left: 2rem;
+                
+                @include tablet {
+                    padding: 0;
+                    text-align: center;
+                }
             }
         }
+    }
+}
+.icon-container{
+    
+    @include tablet {
+        width: 7rem;
     }
 }
