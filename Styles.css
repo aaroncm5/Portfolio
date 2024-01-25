@@ -46,8 +46,7 @@ html, body {
 .header {
   height: 10vh;
   display: flex;
-  background: rgb(2, 0, 36);
-  background: #000;
+  background: lightgray;
   justify-content: space-between;
   position: relative;
 }
@@ -99,7 +98,7 @@ html, body {
   list-style-type: none;
 }
 .header-nav__list-item-link {
-  color: white;
+  color: black;
   background-image: linear-gradient(to right, #ffa200, #ffa200 50%, #ffffff 50%);
   background-size: 200% 100%;
   background-position: -100%;
@@ -152,9 +151,9 @@ html, body {
   display: none;
   width: 100%;
   position: absolute;
-  top: 5rem;
+  top: 10vh;
   left: 0;
-  background-color: #222426;
+  background-color: lightgray;
   list-style-type: none;
 }
 .mobile-nav__list-item {
@@ -163,7 +162,7 @@ html, body {
 }
 .mobile-nav__list-item-link {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .show {
@@ -196,7 +195,7 @@ html, body {
   }
 }
 .container {
-  padding: 0 0.5rem;
+  padding: 0 2rem;
 }
 @media (min-width: 768px) {
   .container {
@@ -206,6 +205,14 @@ html, body {
 @media (min-width: 768px) {
   .container-body {
     margin-left: 20%;
+    padding: 2rem;
+    width: 80%;
+  }
+}
+@media (min-width: 1280px) {
+  .container-body {
+    margin-left: 20%;
+    padding: 4rem, 2em;
   }
 }
 
@@ -291,20 +298,36 @@ html, body {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1280px) {
+  .about {
+    padding: 0 3rem;
+  }
+}
 .about-title {
   width: 100%;
   padding: 1rem 0;
 }
 .about-title__title {
   margin: 0;
-  color: white;
+  color: black;
+  font-weight: 400;
 }
 .about-title__name {
   margin: 0;
-  color: white;
+  color: black;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+  width: auto;
+  font-weight: 700;
+  height: 1.5rem;
 }
 .about-description__text {
-  color: white;
+  color: black;
+}
+@media (min-width: 1280px) {
+  .about-description__text {
+    margin: 0 3rem;
+  }
 }
 .about-image {
   height: 15rem;
@@ -319,4 +342,76 @@ html, body {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.about-skills__title {
+  color: orange;
+}
+.about-skills-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media (min-width: 768px) {
+  .about-skills-list {
+    height: 15rem;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 2rem;
+    overflow-x: scroll;
+    padding: 1rem;
+  }
+}
+.about-skills-list__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.2px);
+  -webkit-backdrop-filter: blur(3.2px);
+  border: 1px solid rgba(255, 255, 255, 0.49);
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .about-skills-list__card {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 20rem;
+  }
+}
+.about-skills-list__icon {
+  height: 50px;
+}
+@media (min-width: 768px) {
+  .about-skills-list__icon {
+    height: auto;
+    width: 100%;
+  }
+}
+.about-skills-list__text {
+  padding-left: 2rem;
+}
+@media (min-width: 768px) {
+  .about-skills-list__text {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .icon-container {
+    width: 7rem;
+  }
 }/*# sourceMappingURL=Styles.css.map */
