@@ -10,7 +10,7 @@ if(activeLinks.length) {
             activeLinks.forEach((activeLink) => {
                 activeLink.classList.remove('active');
             });
-            e.preventDefault();
+            // e.preventDefault();
             activeLink.classList.add('active');
         });
     });
