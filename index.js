@@ -16,7 +16,7 @@ if(activeLinks.length) {
     });
 }
 
-const words = ['Aaron Mahabir', 'Fullstack Developer']
+const words = ['Aaron Mahabir', 'A Fullstack Developer']
 const textArea = document.querySelector('.about-title__name')
 wordsIndex = 0;
 index = 0;

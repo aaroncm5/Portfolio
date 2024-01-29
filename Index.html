@@ -28,10 +28,10 @@
                     <a onclick="showMenu()" class="mobile-nav__list-item-link" href="#Projects">Projects</a>
                 </li>
                 <li class="mobile-nav__list-item">
-                    <a onclick="showMenu()" class="mobile-nav__list-item-link" href="#">Resume</a>
+                    <a onclick="showMenu()" class="mobile-nav__list-item-link" href="#Resume">Resume</a>
                 </li>
                 <li class="mobile-nav__list-item">
-                    <a onclick="showMenu()" class="mobile-nav__list-item-link" href="#">Contact</a>
+                    <a onclick="showMenu()" class="mobile-nav__list-item-link" href="#Contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -39,7 +39,7 @@
 
     <Main class="container">
 
-        <nav class="nav">
+        <div class="nav">
 
             <div class="nav-logo">
                 <a class="nav-logo__image" href="#">
@@ -54,9 +54,6 @@
                 <a class="nav-contact__link" href="https://www.linkedin.com/in/aaronmahabir/">
                     <img class="nav-contact__link-icon" src="./assets/icons/icons8-linkedin.svg" alt="LinkedIn">
                 </a>
-                <a class="nav-contact__link" href="/">
-                    <img class="nav-contact__link-icon" src="./assets/icons/email_icon.svg" alt="Email">
-                </a>    
             </div>
 
             <ul class="nav-list">
@@ -67,16 +64,16 @@
                     <a class="nav-list__item-link" href="#Projects">Projects</a>
                 </li>
                 <li class="nav-list__item">
-                    <a class="nav-list__item-link" href="#">Resume</a>
+                    <a class="nav-list__item-link" href="#Resume">Resume</a>
                 </li>
                 <li class="nav-list__item">
-                    <a class="nav-list__item-link" href="#">Contact</a>
+                    <a class="nav-list__item-link" href="#Contact">Contact</a>
                 </li>
             </ul>
-        </nav>
+        </div>
 
 
-        <div class="container-body">
+        <section class="container-body">
             <div class="about" id="About">
                 <div class="about-title">
                     <h2 class="about-title__title">Hello I'm,</h2>
@@ -151,7 +148,7 @@
                 </div>
             </div>
     
-            <div class="projects" id="Projects">
+            <section class="projects" id="Projects">
                 <h2 class="projects__title">Projects</h2>
                 <div class="projects-container">
                     <h3 class="projects-name">
@@ -175,12 +172,13 @@
                     </div>
                 </div>
                 
-            </div>
+            </section>
 
-            <div class="resume" id="Resume">
+            <section class="resume" id="Resume">
                 <h2 class="resume__title">Resume</h2>
                 <div class="resume-download">
                     <a class="resume-download__link" href="./assets/downloads/AaronMahabirResume.pdf" download>Download My Resume</a>
+                    <img class="resume-download__icon" src="./assets/icons/download.png" alt="download icon">
                 </div>
                 <div class="resume-image">
                     <button onclick="showResume()" class="resume-image__button">View Resume</button>
@@ -188,8 +186,8 @@
                         <img class="resume-image__picture" src="./assets/downloads/resumeImage.png" alt="">
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
 
         
     </Main>
@@ -198,8 +196,14 @@
     <Footer class="footer" id="Contact">
         <div class="footer-container">
             <h2 class="footer-container__title">Contact Me</h2>
-            <img src="./assets/icons/icons8-github.svg" alt="GitHub">
-            <img src="./assets/icons/icons8-linkedin.svg" alt="LinkedIn">
+            <div class="footer-contact">
+                <a class="footer-contact__link" href="https://github.com/aaroncm5">
+                    <img class="footer-contact__link-icon" src="./assets/icons/icons8-github.svg" alt="GitHub"> 
+                </a>
+                <a class="footer-contact__link" href="https://www.linkedin.com/in/aaronmahabir/">
+                    <img class="footer-contact__link-icon" src="./assets/icons/icons8-linkedin.svg" alt="LinkedIn">
+                </a>
+            </div> 
         </div>
     </Footer>
 

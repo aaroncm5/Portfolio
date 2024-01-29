@@ -230,6 +230,7 @@ html, body {
     padding: 1rem;
     background-color: lightgray;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
@@ -465,20 +466,59 @@ html, body {
 .resume__title {
   color: orange;
 }
-.resume-display {
-  height: 10rem;
+.resume-download {
+  display: flex;
+  width: 100%;
+  height: 1rem;
+}
+.resume-download__link {
+  text-decoration: none;
+  color: black;
+}
+.resume-download__icon {
+  height: 100%;
+  margin-left: 0.5rem;
+}
+.resume-image {
+  margin-top: 1rem;
+}
+.resume-image__button {
+  width: 8rem;
+  height: 1.5rem;
+  background-color: orange;
+  border-radius: 1rem;
+  box-shadow: none;
+  border: none;
 }
 .resume-image__picture {
   display: none;
 }
 
 .display {
-  width: 50%;
+  width: 100%;
   display: block;
+  margin-top: 2rem;
 }
 
+.footer {
+  padding: 0 3rem;
+  margin-bottom: 3rem;
+}
 @media (min-width: 768px) {
   .footer {
     margin-left: 20%;
   }
+}
+@media (min-width: 768px) {
+  .footer-container {
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer-container {
+    padding: 0 3rem;
+  }
+}
+.footer-container__title {
+  color: orange;
 }/*# sourceMappingURL=Styles.css.map */
