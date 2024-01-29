@@ -4,26 +4,211 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <Header>
-        <div>
-            <a href="#"></a>
-            <p>Aaron Mahabir</p>
+    <Header class="header">
+        <div class="header-logo">
+            <a class="header-logo__image" href="#">
+                <img class="header-logo__image-link" src="./assets/icons/am-logo.png" alt="This is my Logo">
+            </a>
         </div>
-        <nav>
-            <ul>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Resume</li>
-                <li>Contact</li>
+
+        <div class="mobile">
+            <button onclick="showMenu()" class="mobile-button">
+                <img class="mobile-button__image" src="./assets/icons/burger.png" alt="">
+            </button>
+
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__list-item">
+                    <a onclick="showMenu()" class="mobile-nav__list-item-link" href="#About">About</a>
+                </li>
+                <li class="mobile-nav__list-item">
+                    <a onclick="showMenu()" class="mobile-nav__list-item-link" href="#Projects">Projects</a>
+                </li>
+                <li class="mobile-nav__list-item">
+                    <a onclick="showMenu()" class="mobile-nav__list-item-link" href="#Resume">Resume</a>
+                </li>
+                <li class="mobile-nav__list-item">
+                    <a onclick="showMenu()" class="mobile-nav__list-item-link" href="#Contact">Contact</a>
+                </li>
             </ul>
-        </nav>
+        </div>
+
     </Header>
 
-    <Main>
-        <h2></h2>
+    <Main class="container">
+
+        <div class="nav">
+            <div class="nav-logo">
+                <a class="nav-logo__image" href="#">
+                    <img class="nav-logo__image-link" src="./assets/profile/profile2.png" alt="This is my Logo">
+                </a>
+            </div>
+
+            <div class="nav-contact">
+                <a class="nav-contact__link" href="https://github.com/aaroncm5">
+                    <img class="nav-contact__link-icon" src="./assets/icons/icons8-github.svg" alt="GitHub">
+                </a>
+                <a class="nav-contact__link" href="https://www.linkedin.com/in/aaronmahabir/">
+                    <img class="nav-contact__link-icon" src="./assets/icons/icons8-linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+
+            <div class="nav-list">
+                <li class="nav-list__item active">
+                    <a class="nav-list__item-link" href="#About">About</a>
+                </li>
+                <li class="nav-list__item">
+                    <a class="nav-list__item-link" href="#Projects">Projects</a>
+                </li>
+                <li class="nav-list__item">
+                    <a class="nav-list__item-link" href="#Resume">Resume</a>
+                </li>
+                <li class="nav-list__item">
+                    <a class="nav-list__item-link" href="#Contact">Contact</a>
+                </li>
+            </div>
+
+            
+        </div>
+
+
+        <section class="container-body">
+            <div class="about" id="About">
+                <div class="about-title">
+                    <h2 class="about-title__title">Hello I'm,</h2>
+                    <h1 class="about-title__name"></h1> 
+                </div>
+                <div class="about-image">
+                    <img class="about-image__picture" src="./assets/profile/profile.jpg" alt="This is a picture of me">
+                </div>
+                <div class="about-description">
+                    <p class="about-description__text">I became interested in coding after taking a few intro classes while studying engineering. I decided to become a full-stack developer and joined BrainStation to learn web development. I enjoy coding and applying concepts in practical settings. I am proficient in fullstack development and eager to learn new languages as the industry continues to grow. I'm excited to work as part of a development team on new projects.</p>
+                </div>
+                    
+                <div class="about-skills">
+                    <h3 class="about-skills__title">Skills</h3>
+                    <div class="about-skills-list">
+                        <div class="about-skills-list__card">
+                            <div class="icon-container">
+                                <img class="about-skills-list__icon" src="./assets/icons/skills/react.png" alt="react logo">
+                            </div>
+                            
+                            <p class="about-skills-list__text">ReactJS</p>
+                        </div>
+                        <div class="about-skills-list__card">
+                            <div class="icon-container">
+                                <img class="about-skills-list__icon" src="./assets/icons/skills/node-js.png" alt="Nodejs logo">
+                            </div>
+                            
+                            <p class="about-skills-list__text">NodeJS</p>
+                        </div>
+                        <div class="about-skills-list__card">
+                            <div class="icon-container">
+                                <img class="about-skills-list__icon" src="./assets/icons/skills/mysql.png" alt="MySQL logo">
+                            </div>
+                            
+                            <p class="about-skills-list__text">MySQL</p>
+                        </div>
+                        <div class="about-skills-list__card">
+                            <div class="icon-container">
+                                <img class="about-skills-list__icon" src="./assets/icons/skills/html-5.png" alt="HTML logo">
+                            </div>
+                            
+                            <p class="about-skills-list__text">HTML</p>
+                        </div>
+                        <div class="about-skills-list__card">
+                            <div class="icon-container">
+                                <img class="about-skills-list__icon" src="./assets/icons/skills/sass.png" alt="SASS logo">
+                            </div>
+                            
+                            <p class="about-skills-list__text">SASS</p>
+                        </div>
+                        <div class="about-skills-list__card">
+                            <div class="icon-container">
+                                <img class="about-skills-list__icon" src="./assets/icons/skills/github.png" alt="Git logo">
+                            </div>
+                            <p class="about-skills-list__text">Git</p>
+                        </div>
+                        <div class="about-skills-list__card">
+                            <div class="icon-container">
+                               <img class="about-skills-list__icon" src="./assets/icons/skills/expressjs.png" alt="Express logo"> 
+                            </div>
+                            
+                            <p class="about-skills-list__text">Express</p>
+                        </div>
+                        <div class="about-skills-list__card">
+                            <div class="icon-container">
+                                <img class="about-skills-list__icon" src="./assets/icons/skills/ruby.png" alt="Ruby logo">   
+                            </div>
+                            
+                            <p class="about-skills-list__text">Ruby on Rails</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <section class="projects" id="Projects">
+                <h2 class="projects__title">Projects</h2>
+                <div class="projects-container">
+                    <h3 class="projects-name">
+                        <a class="projects-name__title" href="https://ultimateteam.vercel.app/">Pokemon Ultimate Team</a>    
+                    </h3>
+                    <p class="projects__description">
+                        Pokemon Ultimate Team is a full stack application that utilizes ReactJS to create the front end experience. 
+                        I used NodeJS to create the server that allows the front end side of the site to communicate with the Database
+                        I created using MySQL.
+                    </p>
+                    <p class="projects__description">
+                        The premise of the site is to allow the user to create various combinations of teams and compare the various statistics and move combinations allowed. The site uses user authentication with basic email and password verification as well as online session storage to allow users to save and team created to a database created in order to view teams created at a later time.
+                    </p>
+                    <div class="projects-screenshot">
+                        <div class="projects-screenshot-container">
+                            <img class="projects-screenshot-container__image" src="./assets/projects/ultimateTeam/Screen Shot 2023-03-02 at 12.03.58 PM.png" alt="">
+                        </div>
+                        <div class="projects-screenshot-container">
+                            <img class="projects-screenshot-container__image" src="./assets/projects/ultimateTeam/Screen Shot 2023-03-02 at 12.04.12 PM.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="resume" id="Resume">
+                <h2 class="resume__title">Resume</h2>
+                <div class="resume-download">
+                    <a class="resume-download__link" href="./assets/downloads/AaronMahabirResume.pdf" download>Download My Resume</a>
+                    <img class="resume-download__icon" src="./assets/icons/download.png" alt="download icon">
+                </div>
+                <div class="resume-image">
+                    <button onclick="showResume()" class="resume-image__button">View Resume</button>
+                    <div class="resume-image-container">
+                        <img class="resume-image__picture" src="./assets/downloads/resumeImage.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        
     </Main>
+
+
+    <Footer class="footer" id="Contact">
+        <div class="footer-container">
+            <h2 class="footer-container__title">Contact Me</h2>
+            <div class="footer-contact">
+                <a class="footer-contact__link" href="https://github.com/aaroncm5">
+                    <img class="footer-contact__link-icon" src="./assets/icons/icons8-github.svg" alt="GitHub"> 
+                </a>
+                <a class="footer-contact__link" href="https://www.linkedin.com/in/aaronmahabir/">
+                    <img class="footer-contact__link-icon" src="./assets/icons/icons8-linkedin.svg" alt="LinkedIn">
+                </a>
+            </div> 
+        </div>
+    </Footer>
+
+    <script src="./index.js"></script>
 </body>
 </html>
