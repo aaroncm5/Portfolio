@@ -230,6 +230,7 @@ html, body {
     padding: 1rem;
     background-color: lightgray;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
@@ -280,14 +281,15 @@ html, body {
 .nav-list__item-link {
   text-decoration: none;
   color: black;
+  z-index: 3;
 }
 
 .active {
   background: rgba(210, 144, 21, 0.37);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(78, 233, 30, 0.1);
-  backdrop-filter: blur(3.2px);
   -webkit-backdrop-filter: blur(3.2px);
+          backdrop-filter: blur(3.2px);
   border: 1px solid rgba(255, 255, 255, 0.49);
   width: 100%;
 }
@@ -420,6 +422,11 @@ html, body {
   padding: 0 1rem;
   width: 100%;
 }
+@media (min-width: 1280px) {
+  .projects {
+    padding: 0 3rem;
+  }
+}
 .projects__title {
   color: orange;
 }
@@ -447,4 +454,72 @@ html, body {
 }
 .projects-screenshot-container__image {
   width: 100%;
+}
+
+.resume {
+  padding: 0 1rem;
+}
+@media (min-width: 1280px) {
+  .resume {
+    padding: 0 3rem;
+  }
+}
+.resume__title {
+  color: orange;
+}
+.resume-download {
+  display: flex;
+  width: 100%;
+  height: 1rem;
+}
+.resume-download__link {
+  text-decoration: none;
+  color: black;
+}
+.resume-download__icon {
+  height: 100%;
+  margin-left: 0.5rem;
+}
+.resume-image {
+  margin-top: 1rem;
+}
+.resume-image__button {
+  width: 8rem;
+  height: 1.5rem;
+  background-color: orange;
+  border-radius: 1rem;
+  box-shadow: none;
+  border: none;
+}
+.resume-image__picture {
+  display: none;
+}
+
+.display {
+  width: 100%;
+  display: block;
+  margin-top: 2rem;
+}
+
+.footer {
+  padding: 0 3rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .footer {
+    margin-left: 20%;
+  }
+}
+@media (min-width: 768px) {
+  .footer-container {
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer-container {
+    padding: 0 3rem;
+  }
+}
+.footer-container__title {
+  color: orange;
 }/*# sourceMappingURL=Styles.css.map */
