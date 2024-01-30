@@ -6,6 +6,9 @@ html, body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    background-color: #FAF9F6;
+
 }
 
 *, *:before, *:after {box-sizing: inherit}
@@ -50,66 +53,66 @@ html, body {
         }
     }
 
-    &-nav {
-        display: none;
-        flex-direction: row;
+    // &-nav {
+    //     display: none;
+    //     flex-direction: row;
 
-        @include tablet {
-            display: flex;
-            align-items: center;
-        }
+    //     @include tablet {
+    //         display: flex;
+    //         align-items: center;
+    //     }
 
-        &__list {
+    //     &__list {
 
-            @include tablet {
-                display: flex;
-            }
+    //         @include tablet {
+    //             display: flex;
+    //         }
 
-            &-item {
-                padding-left: 1rem;
-                list-style-type: none;
+    //         &-item {
+    //             padding-left: 1rem;
+    //             list-style-type: none;
 
-                &-link {
-                    color: black;
+    //             &-link {
+    //                 color: black;
 
-                    background-image: linear-gradient(
-                        to right,
-                        #ffa200,
-                        #ffa200 50%,
-                        #ffffff 50%
-                    );
-                    background-size: 200% 100%;
-                    background-position: -100%;
-                    display: inline-block;
-                    padding: 5px 0;
-                    position: relative;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    transition: all 0.3s ease-in-out;
+    //                 background-image: linear-gradient(
+    //                     to right,
+    //                     #ffa200,
+    //                     #ffa200 50%,
+    //                     #ffffff 50%
+    //                 );
+    //                 background-size: 200% 100%;
+    //                 background-position: -100%;
+    //                 display: inline-block;
+    //                 padding: 5px 0;
+    //                 position: relative;
+    //                 -webkit-background-clip: text;
+    //                 -webkit-text-fill-color: transparent;
+    //                 transition: all 0.3s ease-in-out;
 
-                    &:before{
-                        content: '';
-                        background: #ffa200;
-                        display: block;
-                        position: absolute;
-                        bottom: -3px;
-                        left: 0;
-                        width: 0;
-                        height: 3px;
-                        transition: all 0.3s ease-in-out;
-                      }
+    //                 &:before{
+    //                     content: '';
+    //                     background: #ffa200;
+    //                     display: block;
+    //                     position: absolute;
+    //                     bottom: -3px;
+    //                     left: 0;
+    //                     width: 0;
+    //                     height: 3px;
+    //                     transition: all 0.3s ease-in-out;
+    //                   }
                       
-                      &:hover {
-                       background-position: 0;
-                      }
+    //                   &:hover {
+    //                    background-position: 0;
+    //                   }
                       
-                      &:hover::before{
-                        width: 100%;
-                      }
-                }
-            }
-        }
-    }
+    //                   &:hover::before{
+    //                     width: 100%;
+    //                   }
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 .toggle {
@@ -192,6 +195,7 @@ html, body {
 
 .container {
     padding:0 2rem;
+    background-color: #FAF9F6;
 
     @include tablet {
         display: flex;
@@ -225,7 +229,7 @@ html, body {
         justify-content: center;
         align-items: center;
         padding: 1rem;
-        background-color: lightgray;
+        background-color: orange;
         position: fixed;
         z-index: +1;
         top: 0;
@@ -241,12 +245,11 @@ html, body {
         &__image {   
             width: 100%;
             height: 100%;
-            
 
             &-link {
                 width: 100%;
                 height: 100%;
-                object-fit: scale-down; 
+                object-fit:scale-down; 
                 border-radius: 50%;
                 border: 2px solid white ;
                 
@@ -286,7 +289,7 @@ html, body {
 
             &-link {
                 text-decoration: none;
-                color: black;
+                color: white;
                 z-index: +3;
             }
         }
@@ -294,7 +297,7 @@ html, body {
 }
 
 .active {
-    background: rgba(210, 144, 21, 0.37);
+    background: rgba(110, 104, 92, 0.37);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(78, 233, 30, 0.1);
     backdrop-filter: blur(3.2px);
@@ -366,7 +369,8 @@ html, body {
         width: 100%;
 
         &__title {
-            color: orange;
+            color: black;
+            padding-left: 3rem;
         }
 
         &-list {
@@ -376,14 +380,14 @@ html, body {
 
 
             @include tablet {
-                height: 15rem;
-                width: 100%;
+                height: 16rem;
                 flex-direction: row;
                 flex-wrap: nowrap;
                 align-items: flex-start;
                 gap: 2rem;
                 overflow-x: scroll;
                 padding: 1rem;
+                margin: 0 3rem;
             }
 
             &__card {
@@ -404,7 +408,7 @@ html, body {
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: center;
-                    height: 100%;
+                    height: 95%;
                     width: 20rem;
                 }
             }
@@ -452,6 +456,11 @@ html, body {
 
     &-container {
         width: 100%;
+
+        @include desktop {
+            width: auto;
+            margin: 0 3rem;
+        }
     }
 
     &-name {
@@ -497,6 +506,10 @@ html, body {
         width: 100%;
         height: 1rem;
 
+        @include desktop {
+            margin: 0 3rem;
+        }
+
         &__link {
             text-decoration: none;
             color: black;
@@ -509,6 +522,10 @@ html, body {
     }
     &-image{
         margin-top: 1rem;
+
+        @include desktop {
+            margin: 1rem 3rem 0 3rem;
+        }
 
         &__button {
             width: 8rem;
@@ -550,6 +567,12 @@ html, body {
 
         &__title {
             color: orange;
+        }
+    }
+
+    &-contact {
+        @include desktop {
+            margin: 0 3rem;
         }
     }
 }
