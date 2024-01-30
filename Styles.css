@@ -398,6 +398,15 @@ html, body {
     margin: 0 3rem;
   }
 }
+.projects__description-link {
+  color: orange;
+}
+.projects__description-repo {
+  margin-bottom: 1rem;
+}
+.projects__description-repo-link {
+  color: orange;
+}
 .projects-name {
   width: 100%;
 }
@@ -474,8 +483,20 @@ html, body {
   width: 100%;
   display: block;
   margin-top: 2rem;
+  animation: dropdown 300ms ease-in-out forwards;
 }
 
+@keyframes dropdown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 .footer {
   padding: 0 3rem;
   margin-bottom: 3rem;
