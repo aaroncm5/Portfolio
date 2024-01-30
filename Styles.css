@@ -23,6 +23,8 @@ html, body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  background-color: #FAF9F6;
 }
 
 *, *:before, *:after {
@@ -77,54 +79,6 @@ html, body {
   height: 100%;
   padding: 1rem 0;
   margin: 0;
-}
-.header-nav {
-  display: none;
-  flex-direction: row;
-}
-@media (min-width: 768px) {
-  .header-nav {
-    display: flex;
-    align-items: center;
-  }
-}
-@media (min-width: 768px) {
-  .header-nav__list {
-    display: flex;
-  }
-}
-.header-nav__list-item {
-  padding-left: 1rem;
-  list-style-type: none;
-}
-.header-nav__list-item-link {
-  color: black;
-  background-image: linear-gradient(to right, #ffa200, #ffa200 50%, #ffffff 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
-.header-nav__list-item-link:before {
-  content: "";
-  background: #ffa200;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
-}
-.header-nav__list-item-link:hover {
-  background-position: 0;
-}
-.header-nav__list-item-link:hover::before {
-  width: 100%;
 }
 
 .toggle {
@@ -196,6 +150,7 @@ html, body {
 }
 .container {
   padding: 0 2rem;
+  background-color: #FAF9F6;
 }
 @media (min-width: 768px) {
   .container {
@@ -228,7 +183,7 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: lightgray;
+    background-color: orange;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -280,12 +235,12 @@ html, body {
 }
 .nav-list__item-link {
   text-decoration: none;
-  color: black;
+  color: white;
   z-index: 3;
 }
 
 .active {
-  background: rgba(210, 144, 21, 0.37);
+  background: rgba(110, 104, 92, 0.37);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(78, 233, 30, 0.1);
   -webkit-backdrop-filter: blur(3.2px);
@@ -335,6 +290,9 @@ html, body {
   height: 15rem;
   width: 15rem;
   margin: 2rem 0;
+  background-color: lightgray;
+  border-radius: 50%;
+  border: 2px solid orange;
 }
 .about-image__picture {
   height: 100%;
@@ -342,8 +300,8 @@ html, body {
   border-radius: 50%;
   border: 2px;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .about-skills {
   display: flex;
@@ -351,7 +309,8 @@ html, body {
   width: 100%;
 }
 .about-skills__title {
-  color: orange;
+  color: black;
+  padding-left: 3rem;
 }
 .about-skills-list {
   display: flex;
@@ -360,14 +319,14 @@ html, body {
 }
 @media (min-width: 768px) {
   .about-skills-list {
-    height: 15rem;
-    width: 100%;
+    height: 16rem;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
     gap: 2rem;
     overflow-x: scroll;
     padding: 1rem;
+    margin: 0 3rem;
   }
 }
 .about-skills-list__card {
@@ -389,7 +348,7 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: 95%;
     width: 20rem;
   }
 }
@@ -433,6 +392,21 @@ html, body {
 .projects-container {
   width: 100%;
 }
+@media (min-width: 1280px) {
+  .projects-container {
+    width: auto;
+    margin: 0 3rem;
+  }
+}
+.projects__description-link {
+  color: orange;
+}
+.projects__description-repo {
+  margin-bottom: 1rem;
+}
+.projects__description-repo-link {
+  color: orange;
+}
 .projects-name {
   width: 100%;
 }
@@ -472,6 +446,11 @@ html, body {
   width: 100%;
   height: 1rem;
 }
+@media (min-width: 1280px) {
+  .resume-download {
+    margin: 0 3rem;
+  }
+}
 .resume-download__link {
   text-decoration: none;
   color: black;
@@ -482,6 +461,11 @@ html, body {
 }
 .resume-image {
   margin-top: 1rem;
+}
+@media (min-width: 1280px) {
+  .resume-image {
+    margin: 1rem 3rem 0 3rem;
+  }
 }
 .resume-image__button {
   width: 8rem;
@@ -499,8 +483,20 @@ html, body {
   width: 100%;
   display: block;
   margin-top: 2rem;
+  animation: dropdown 300ms ease-in-out forwards;
 }
 
+@keyframes dropdown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 .footer {
   padding: 0 3rem;
   margin-bottom: 3rem;
@@ -522,4 +518,9 @@ html, body {
 }
 .footer-container__title {
   color: orange;
+}
+@media (min-width: 1280px) {
+  .footer-contact {
+    margin: 0 3rem;
+  }
 }/*# sourceMappingURL=Styles.css.map */
